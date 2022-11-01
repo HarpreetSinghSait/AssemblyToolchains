@@ -174,3 +174,9 @@ if [ "$GDB" == "True" ]; then # if the statement is true, the program will load 
         gdb "${gdb_params[@]}" $OUTPUT_FILE # file will run in GDB terminal with entered paramenters
 
 fi
+
+
+"""
+if fi - is a decision operator used to make desicions unline typical if else this states that 
+if the statement is true then this statement will enxecute else no other statement will be exeuted
+"""
