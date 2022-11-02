@@ -177,6 +177,18 @@ fi
 
 
 """
-if fi - is a decision operator used to make desicions unline typical if else this states that 
-if the statement is true then this statement will enxecute else no other statement will be exeuted
+#!/bin/bash
+
+
+echo "enter the tool you want to install "
+read tool
+echo "do you really want to install ${tool} y/n ? "
+read input 
+if [ "$input" = "y" ]; then 
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install $tool -y
+else
+echo "ok thank you"
+fi
 """
